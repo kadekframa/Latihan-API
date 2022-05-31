@@ -1,0 +1,27 @@
+GET http://localhost:5000/users
+
+###
+GET http://localhost:5000/users/62964f6ec76d11313d19ce72
+
+###
+POST http://localhost:5000/users
+Content-Type: application/json
+
+{
+    "name": "Semangat",
+    "email": "kadek@gmail.com",
+    "gender": "Male"
+}
+
+###
+PATCH  http://localhost:5000/users/62964f6ec76d11313d19ce72
+Content-Type: application/json
+
+{
+    "name": "Pantang Menyerah",
+    "email": "Semangat@gmail.com",
+    "gender": "Male"
+}
+
+###
+DELETE http://localhost:5000/users/62964f6ec76d11313d19ce72
